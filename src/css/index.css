@@ -1,0 +1,80 @@
+div.navigation-bar#navigation-bar{
+    overflow: hidden !important;
+    backdrop-filter: blur(20px);
+}
+div.navigation-bar#navigation-bar a:hover{
+    background: #ffffff20;
+}
+div.navigation-bar#navigation-bar a.navigation-link{
+    transform: translateY(50px);
+    animation: 0.7s animate-move-up 0.5s cubic-bezier(0.85, 0.33, 0.23, 1.42) forwards;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+div.navigation-bar#navigation-bar a.active-link{
+    color: dodgerblue;
+}
+div.navigation-bar#navigation-bar button.active-button:hover{
+    background: transparent !important;
+    color: var(--html-navigation-fontcolor) !important;
+}
+div.navigation-bar#navigation-bar button:hover{
+    opacity: 0.7;
+}
+div.reception-container{
+    flex-direction: column !important;
+}
+div.companies-container{
+    position: relative;
+}
+div.companies-container div.company-container{
+    border-radius: var(--html-border-radius-l);
+    background: linear-gradient(to top, #ffffff10, #ffffff20);
+    border: 0.03rem solid #ffffff05;
+    padding: 14px 20px;
+    cursor: pointer;
+    position: relative !important;
+}
+div.companies-container div.company-container:hover{
+    transform: translateY(-5px);
+}
+h1 span{
+    transform: scale(0) !important;animation: animate-move-front 0.2s ease-in-out forwards;
+}
+div.trusted-companies div.company-container{
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--html-border-radius-l);
+    box-shadow: 0 0 20px #00000010;
+    cursor: pointer;
+    animation: animate-move-up-2 0.8s ease-in-out forwards infinite;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+div.trusted-companies div.company-container img{
+    width: 60%;
+}
+@keyframes animate-move-up{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes animate-move-up-2{
+    0%, 100%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+@keyframes animate-move-front{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

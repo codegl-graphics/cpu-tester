@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../../public/fonts/NotoKufiArabic-VariableFont_wght.ttf");
+}
+*{
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins Regular", "Inter";
+    letter-spacing: 0.04em;
+    transition: all 0.2s ease;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+:root{
+    --html-navigation-bar-height: 70px;
+    --html-reception-height: 600px;
+    --html-border-radius-l: 6px;
+    --html-public-border: 0.1rem solid #ffffff10;
+
+    --html-navigation-background: #111214;
+    --html-navigation-alphabackg: #11121488;
+    --html-navigation-fontcolor: #ffffffc7;
+    --html-navigation-fontca: #ffffff;
+}
+a, button{
+    cursor: pointer;
+}
